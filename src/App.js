@@ -18,7 +18,7 @@ import UseEffectExampleFour from '../src/components/hooks/useEffect/useEffectExa
 import UseEffectFetchDataAxiosGetCall from './components/hooks/useEffect/useEffectFetchDataAxiosGetCall';
 import UseEffectFetchDataAxiosPostCall from './components/hooks/useEffect/useEffectFetchDataAxiosPostCall';
 import UseEffectFetchDataAxiosGetOnBtnClick from './components/hooks/useEffect/useEffectFetchDataAxiosGetOnBtnClick';
-
+import UseContextMain from './components/hooks/useContext/useContextMain';
 import './App.css';
 
 import {
@@ -95,7 +95,7 @@ function App() {
               </div>
               <h6>UseContext Section</h6>
               <div>
-                <Link to="/UseEffectFetchDataAxiosGetOnBtnClick">1. UseContext Example 1 </Link>
+                <Link to="/UseContextMain">1. UseContext Example 1 </Link>
               </div>
             </div>
             <div className="router-right-menu-section">
@@ -118,7 +118,7 @@ function App() {
               <Route exact path='/UseEffectFetchDataAxiosGetCall' component={UseEffectFetchDataAxiosGetCall}></Route>
               <Route exact path='/UseEffectFetchDataAxiosPostCall' component={UseEffectFetchDataAxiosPostCall}></Route>
               <Route exact path='/UseEffectFetchDataAxiosGetOnBtnClick' component={UseEffectFetchDataAxiosGetOnBtnClick}></Route>
-              <Route exact path='/UseEffectFetchDataAxiosGetOnBtnClick' component={UseEffectFetchDataAxiosGetOnBtnClick}></Route>
+              <Route exact path='/UseContextMain' component={UseContextMain}></Route>
             </Switch>
             </div>
           </div>
