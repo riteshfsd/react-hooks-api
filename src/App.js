@@ -24,6 +24,7 @@ import CounterOne from "./components/hooks/useReducer/CounterOne";
 import CounterTwo from "./components/hooks/useReducer/CounterTwo";
 import CounterThree from "./components/hooks/useReducer/CounterThree";
 import CounterFour from "./components/hooks/useReducer/CounterFour";
+import ExampleFive from "./components/hooks/useReducer/ExampleFive";
 
 import "./App.css";
 
@@ -143,6 +144,9 @@ function App() {
                   4. useReducer with useContext Examples
                 </Link>
               </div>
+              <div>
+                <Link to="/ExampleFive">4. useReducer API fetch Examples</Link>
+              </div>
             </div>
             <div className="router-right-menu-section">
               <Switch>
@@ -254,6 +258,11 @@ function App() {
                   exact
                   path="/CounterFour"
                   component={CounterFour}
+                ></Route>
+                <Route
+                  exact
+                  path="/ExampleFive"
+                  component={ExampleFive}
                 ></Route>
               </Switch>
             </div>
