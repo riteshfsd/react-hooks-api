@@ -20,6 +20,10 @@ import UseEffectFetchDataAxiosPostCall from "./components/hooks/useEffect/useEff
 import UseEffectFetchDataAxiosGetOnBtnClick from "./components/hooks/useEffect/useEffectFetchDataAxiosGetOnBtnClick";
 import UseContextMain from "./components/hooks/useContext/useContextMain";
 import UseSelector from "./components/hooks/useSelector/useSelector";
+import CounterOne from "./components/hooks/useReducer/CounterOne";
+import CounterTwo from "./components/hooks/useReducer/CounterTwo";
+import CounterThree from "./components/hooks/useReducer/CounterThree";
+import CounterFour from "./components/hooks/useReducer/CounterFour";
 
 import "./App.css";
 
@@ -32,6 +36,7 @@ function App() {
         <Router>
           <div className="router-main-container">
             <div className="router-left-menu-section">
+              <h6 style={{ marginBottom: "1px" }}>useState Section</h6>
               <div>
                 <Link to="/">Class Counter Examples</Link>
               </div>
@@ -56,7 +61,7 @@ function App() {
               <div>
                 <Link to="/ImageGallery">Image Gallery Examples</Link>
               </div>
-              <h6>UseEffect Section</h6>
+              <h6 style={{ marginBottom: "1px" }}>UseEffect Section</h6>
               <div>
                 <Link to="/CounterExampleClass">
                   1. Update the Browser title using class component
@@ -113,13 +118,30 @@ function App() {
                   click{" "}
                 </Link>
               </div>
-              <h6>UseContext Section</h6>
+              <h6 style={{ marginBottom: "1px" }}>UseContext Section</h6>
               <div>
                 <Link to="/UseContextMain">1. UseContext Example 1 </Link>
               </div>
-              <h6>UseSelector Section</h6>
+              <h6 style={{ marginBottom: "1px" }}>UseSelector Section</h6>
               <div>
                 <Link to="/UseSelector">1. UseSelector Example 1 </Link>
+              </div>
+              <h6 style={{ marginBottom: "1px" }}>useReducer Section</h6>
+              <div>
+                <Link to="/CounterOne">1. useReducer Example 1 - counter </Link>
+              </div>
+              <div>
+                <Link to="/CounterTwo">2. useReducer Example 2 using </Link>
+              </div>
+              <div>
+                <Link to="/CounterThree">
+                  3. useReducer multiple useReducers{" "}
+                </Link>
+              </div>
+              <div>
+                <Link to="/CounterFour">
+                  4. useReducer with useContext Examples
+                </Link>
               </div>
             </div>
             <div className="router-right-menu-section">
@@ -215,6 +237,23 @@ function App() {
                   exact
                   path="/UseSelector"
                   component={UseSelector}
+                ></Route>
+                <Route
+                  exact
+                  path="/UseSelector"
+                  component={UseSelector}
+                ></Route>
+                <Route exact path="/CounterOne" component={CounterOne}></Route>
+                <Route exact path="/CounterTwo" component={CounterTwo}></Route>
+                <Route
+                  exact
+                  path="/CounterThree"
+                  component={CounterThree}
+                ></Route>
+                <Route
+                  exact
+                  path="/CounterFour"
+                  component={CounterFour}
                 ></Route>
               </Switch>
             </div>
