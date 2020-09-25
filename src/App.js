@@ -25,6 +25,8 @@ import CounterTwo from "./components/hooks/useReducer/CounterTwo";
 import CounterThree from "./components/hooks/useReducer/CounterThree";
 import CounterFour from "./components/hooks/useReducer/CounterFour";
 import ExampleFive from "./components/hooks/useReducer/ExampleFive";
+import ExampleSix from "./components/hooks/useReducer/ExampleSix";
+import ParentComponent from "./components/hooks/useCallback-useMemo/ParentComponent";
 
 import "./App.css";
 
@@ -147,6 +149,17 @@ function App() {
               <div>
                 <Link to="/ExampleFive">4. useReducer API fetch Examples</Link>
               </div>
+              <div>
+                <Link to="/ExampleSix">
+                  5. API Data fetch Using useReducer and useEffect Examples
+                </Link>
+              </div>
+              <h6 style={{ marginBottom: "1px" }}>useCallBack n useMemo Section</h6>
+              <div>
+                <Link to="/ParentComponent">
+                  1. examples to understand the requirement for pwerformances
+                </Link>
+              </div>
             </div>
             <div className="router-right-menu-section">
               <Switch>
@@ -264,6 +277,8 @@ function App() {
                   path="/ExampleFive"
                   component={ExampleFive}
                 ></Route>
+                <Route exact path="/ExampleSix" component={ExampleSix}></Route>
+                <Route exact path="/ParentComponent" component={ParentComponent}></Route>
               </Switch>
             </div>
           </div>

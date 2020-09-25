@@ -14,8 +14,8 @@ function FetchAPIExample() {
         setError("");
       })
       .catch((error) => {
-        setLoading(false);
         setPost({});
+        setLoading(false);
         setError("No Data found here");
       });
   }, []);
