@@ -20,7 +20,7 @@ function ParentComponent() {
   const incrementSalary = useCallback(() => {
     setSalary(salary + 1000)
   }, [salary])
-  
+
   return (
     <div>
       <Title />

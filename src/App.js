@@ -26,7 +26,8 @@ import CounterThree from "./components/hooks/useReducer/CounterThree";
 import CounterFour from "./components/hooks/useReducer/CounterFour";
 import ExampleFive from "./components/hooks/useReducer/ExampleFive";
 import ExampleSix from "./components/hooks/useReducer/ExampleSix";
-import ParentComponent from "./components/hooks/useCallback-useMemo/ParentComponent";
+import ParentComponent from "./components/hooks/useCallback/ParentComponent";
+import Counter from "./components/hooks/useMemo/Counter";
 
 import "./App.css";
 
@@ -154,10 +155,16 @@ function App() {
                   5. API Data fetch Using useReducer and useEffect Examples
                 </Link>
               </div>
-              <h6 style={{ marginBottom: "1px" }}>useCallBack n useMemo Section</h6>
+              <h6 style={{ marginBottom: "1px" }}>useCallBack Section</h6>
               <div>
                 <Link to="/ParentComponent">
-                  1. examples to understand the requirement for pwerformances
+                  1. examples to understand the requirement for performances
+                </Link>
+              </div>
+              <h6 style={{ marginBottom: "1px" }}>useMemo Section</h6>
+              <div>
+                <Link to="/Counter">
+                  1. examples to understand the requirement for performances using useMemo
                 </Link>
               </div>
             </div>
@@ -279,6 +286,7 @@ function App() {
                 ></Route>
                 <Route exact path="/ExampleSix" component={ExampleSix}></Route>
                 <Route exact path="/ParentComponent" component={ParentComponent}></Route>
+                <Route exact path="/Counter" component={Counter}></Route>
               </Switch>
             </div>
           </div>
