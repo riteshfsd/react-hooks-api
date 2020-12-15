@@ -28,6 +28,7 @@ import ExampleFive from "./components/hooks/useReducer/ExampleFive";
 import ExampleSix from "./components/hooks/useReducer/ExampleSix";
 import ParentComponent from "./components/hooks/useCallback/ParentComponent";
 import Counter from "./components/hooks/useMemo/Counter";
+import Main from "./components/hooks/useContext/example2/Main";
 
 import "./App.css";
 
@@ -125,6 +126,9 @@ function App() {
               <h6 style={{ marginBottom: "1px" }}>UseContext Section</h6>
               <div>
                 <Link to="/UseContextMain">1. UseContext Example 1 </Link>
+              </div>
+              <div>
+                <Link to="/Main">1. UseContext Example 2 </Link>
               </div>
               <h6 style={{ marginBottom: "1px" }}>UseSelector Section</h6>
               <div>
@@ -256,6 +260,11 @@ function App() {
                   exact
                   path="/UseContextMain"
                   component={UseContextMain}
+                ></Route>
+                <Route
+                  exact
+                  path="/Main"
+                  component={Main}
                 ></Route>
                 <Route
                   exact
